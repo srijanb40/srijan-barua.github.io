@@ -1,0 +1,28 @@
+:root{--bg:#f2f4f6;--ink:#14202b;--mute:#53636f;--line:#cfd7dd;--accent:#0b6e79;--panel:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#10181f;--ink:#e6edf2;--mute:#9aabb8;--line:#2a3944;--accent:#4fc3cf;--panel:#17222b}}
+*{box-sizing:border-box}
+html{scroll-padding-top:1rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.05rem/1.7 "Source Serif 4",Georgia,serif;display:grid;grid-template-columns:13rem minmax(0,1fr);min-height:100vh}
+h1,h2,h3,nav,.meta{font-family:"Archivo","Helvetica Neue",Arial,sans-serif}
+nav{position:sticky;top:0;align-self:start;height:100vh;padding:2rem 1.25rem;border-right:1px solid var(--line)}
+nav .name{font-weight:800;font-size:1.25rem;display:block;margin-bottom:1.5rem;color:var(--ink);text-decoration:none}
+nav a{display:block;padding:.3rem 0;color:var(--mute);text-decoration:none}
+nav a:hover,nav a[aria-current]{color:var(--accent)}
+nav a:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{padding:3rem clamp(1.25rem,5vw,4rem);max-width:60rem}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;margin:0 0 1rem;letter-spacing:-.02em}
+h2{font-size:1.4rem;margin:2.5rem 0 .75rem}
+h3{font-size:1.1rem;margin:0 0 .25rem}
+p,li{max-width:68ch}
+a{color:var(--accent)}
+.lead{font-size:1.25rem;color:var(--mute)}
+dl{display:grid;grid-template-columns:11rem 1fr;gap:.5rem 1.5rem;border-top:1px solid var(--line);padding-top:1rem}
+dt{font-family:"Archivo",sans-serif;font-weight:700}dd{margin:0}
+.item{padding:1rem 0;border-top:1px solid var(--line)}
+.item p{margin:.2rem 0}
+.meta{color:var(--mute);font-size:.9rem}
+.tags span{display:inline-block;margin:.15rem .4rem .15rem 0;padding:.05rem .5rem;border:1px solid var(--line);border-radius:3px;font:.85rem "Archivo",sans-serif}
+pre{background:var(--panel);border:1px solid var(--line);padding:1rem;overflow-x:auto;font-size:.9rem}
+code{font-family:ui-monospace,Menlo,Consolas,monospace}
+footer{margin-top:4rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+@media (max-width:720px){body{display:block}nav{position:static;height:auto;border:0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:.25rem 1rem;padding:1rem}nav .name{width:100%;margin:0}dl{grid-template-columns:1fr}}
