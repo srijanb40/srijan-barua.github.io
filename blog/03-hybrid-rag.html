@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hybrid RAG for Operational Knowledge | Srijan Barua</title><meta name="description" content="Combining semantic and keyword search to retrieve relevant operational knowledge and ground generated responses.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css"></head><body><nav aria-label="Main">
+<a class="name" href="../index.html">Srijan</a>
+<a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="index.html" aria-current="page">Blog</a><a href="../certifications.html">Certifications</a><a href="../index.html#contact">Contact</a>
+<a href="https://github.com/srijanb40" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/srijanbarua/" target="_blank" rel="noopener noreferrer">LinkedIn</a></nav><main><article>
+<header class="article-header"><p class="meta">RAG & Retrieval · Article 03 of 6</p><h1>Hybrid RAG for Operational Knowledge</h1><p class="lead">Combining semantic and keyword search to retrieve relevant operational knowledge and ground generated responses.</p></header>
+<div class="status-note"><strong>Publication note:</strong> This article is an editable starter draft. Verify examples, replace illustrative material with sanitised evidence, and label prototype vs production work accurately before publishing.</div>
+<div class="article-content"><p class="lead">Hybrid retrieval can improve the grounding of operational assistants by combining lexical matching with semantic similarity.</p>
+<h2>Why retrieval matters</h2><p>LLMs do not inherently know the latest internal runbooks or incident records. Retrieval supplies relevant source material at response time.</p>
+<h2>Keyword and vector search</h2><p>Keyword search is useful for exact error strings, IDs and product names. Semantic search helps retrieve conceptually similar incidents and documentation. A hybrid strategy can combine their strengths.</p>
+<h2>Suggested pipeline</h2><ol><li>Ingest and clean approved documents.</li><li>Chunk content with metadata.</li><li>Generate embeddings.</li><li>Run lexical and vector retrieval.</li><li>Rank, deduplicate and filter results.</li><li>Provide source references to the model.</li></ol>
+<h2>Quality checks</h2><p>Measure recall, precision, relevance, source freshness and whether generated answers are supported by retrieved evidence.</p></div>
+<nav class="article-nav" aria-label="Article navigation"><a href="02-llm-powered-aiops.html">← LLM-Powered AIOps Case Investigation</a><a href="04-reliable-ai-agents.html">Building Reliable AI Agents with LangGraph and MCP →</a></nav>
+<p><a href="index.html">← Back to Blog</a></p></article><footer>© 2026 Srijan Barua · <a href="../index.html">Portfolio home</a></footer></main></body></html>

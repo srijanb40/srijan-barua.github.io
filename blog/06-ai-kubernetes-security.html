@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-Assisted Kubernetes Security and Anomaly Detection | Srijan Barua</title><meta name="description" content="A proposed architecture for correlating vulnerability, deployment, metric and log signals to support prioritised investigation.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css"></head><body><nav aria-label="Main">
+<a class="name" href="../index.html">Srijan</a>
+<a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="index.html" aria-current="page">Blog</a><a href="../certifications.html">Certifications</a><a href="../index.html#contact">Contact</a>
+<a href="https://github.com/srijanb40" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/srijanbarua/" target="_blank" rel="noopener noreferrer">LinkedIn</a></nav><main><article>
+<header class="article-header"><p class="meta">AI & Kubernetes Security · Article 06 of 6</p><h1>AI-Assisted Kubernetes Security and Anomaly Detection</h1><p class="lead">A proposed architecture for correlating vulnerability, deployment, metric and log signals to support prioritised investigation.</p></header>
+<div class="status-note"><strong>Publication note:</strong> This article is an editable starter draft. Verify examples, replace illustrative material with sanitised evidence, and label prototype vs production work accurately before publishing.</div>
+<div class="article-content"><p class="lead">A reference design for combining Kubernetes security signals and observability data to assist prioritisation and investigation.</p>
+<h2>Signals</h2><p>Potential inputs include image scan findings, deployment changes, Kubernetes events, metrics and logs. The sources should be authorised and sanitised.</p>
+<h2>Correlation and prioritisation</h2><p>Combine severity with workload context, exposure, recent change information and available evidence. AI may help summarise relationships, but deterministic policy should govern risk thresholds.</p>
+<h2>Response workflow</h2><ol><li>Collect and normalise signals.</li><li>Correlate workload and deployment metadata.</li><li>Identify suspicious patterns or unusual behaviour.</li><li>Produce evidence and recommended checks.</li><li>Route to the responsible engineer.</li></ol>
+<h2>Guardrails and limitations</h2><p>Do not allow the model to execute remediation directly. Validate alerts, account for false positives, protect sensitive data and document that this is a proposed or prototype architecture until deployed and evaluated.</p></div>
+<nav class="article-nav" aria-label="Article navigation"><a href="05-llmops-observability.html">← LLMOps: Observability, Evaluation and Governance</a><a href="index.html">All articles →</a></nav>
+<p><a href="index.html">← Back to Blog</a></p></article><footer>© 2026 Srijan Barua · <a href="../index.html">Portfolio home</a></footer></main></body></html>

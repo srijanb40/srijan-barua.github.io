@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building Reliable AI Agents with LangGraph and MCP | Srijan Barua</title><meta name="description" content="Designing bounded workflows, tool permissions, validation, retries and human approval for operational agents.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css"></head><body><nav aria-label="Main">
+<a class="name" href="../index.html">Srijan</a>
+<a href="../index.html">Home</a><a href="../about.html">About</a><a href="../projects.html">Projects</a><a href="index.html" aria-current="page">Blog</a><a href="../certifications.html">Certifications</a><a href="../index.html#contact">Contact</a>
+<a href="https://github.com/srijanb40" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/srijanbarua/" target="_blank" rel="noopener noreferrer">LinkedIn</a></nav><main><article>
+<header class="article-header"><p class="meta">AI Agents · Article 04 of 6</p><h1>Building Reliable AI Agents with LangGraph and MCP</h1><p class="lead">Designing bounded workflows, tool permissions, validation, retries and human approval for operational agents.</p></header>
+<div class="status-note"><strong>Publication note:</strong> This article is an editable starter draft. Verify examples, replace illustrative material with sanitised evidence, and label prototype vs production work accurately before publishing.</div>
+<div class="article-content"><p class="lead">Reliable agents are designed around explicit state, bounded actions, validation and policy—not unrestricted autonomy.</p>
+<h2>Agent workflow</h2><p>Use an orchestrator to manage a clear sequence: intake, planning, tool selection, evidence gathering, validation and response generation.</p>
+<h2>Tool contracts</h2><ul><li>Document each tool's inputs and outputs.</li><li>Validate inputs against schemas.</li><li>Apply least privilege and allowlists.</li><li>Prefer read-only tools for investigation.</li><li>Set timeouts and retry limits.</li></ul>
+<h2>Human approval</h2><p>Require explicit review for remediation, ticket changes, production writes and other consequential actions. Make the proposed action and supporting evidence visible.</p>
+<h2>Failure handling</h2><p>Use deterministic fallback paths, structured errors and clear uncertainty when a tool fails or evidence is insufficient.</p></div>
+<nav class="article-nav" aria-label="Article navigation"><a href="03-hybrid-rag.html">← Hybrid RAG for Operational Knowledge</a><a href="05-llmops-observability.html">LLMOps: Observability, Evaluation and Governance →</a></nav>
+<p><a href="index.html">← Back to Blog</a></p></article><footer>© 2026 Srijan Barua · <a href="../index.html">Portfolio home</a></footer></main></body></html>
